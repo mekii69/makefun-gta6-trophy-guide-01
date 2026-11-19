@@ -1,0 +1,110 @@
+/* Leonida Legend: an original dusk-over-Vice-City look — deep navy, sunset
+   pink and teal. No Rockstar logo or official artwork anywhere. */
+:root {
+  --navy: #0e1424;
+  --navy-2: #171f38;
+  --card: #ffffff;
+  --ink: #1b2340;
+  --muted: #5a6480;
+  --pink: #ff5e8a;
+  --teal: #19c2b8;
+  --gold: #c9a227;
+  --line: #dfe3ee;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  color: var(--ink);
+  background: #f4f6fb;
+  line-height: 1.5;
+}
+.hero {
+  background: linear-gradient(135deg, #0e1424 0%, #2b1d52 55%, #7a2d5e 100%);
+  color: #fff;
+  padding: 28px 24px 22px;
+}
+.kicker { letter-spacing: .14em; font-size: 12px; color: #ffb3c8; margin: 0 0 8px; }
+.hero h1 { margin: 0 0 8px; font-size: 32px; line-height: 1.15; }
+.hero .sub { max-width: 760px; margin: 0 0 10px; color: #e8eaf4; }
+.hero .honest {
+  max-width: 760px;
+  background: rgba(255, 255, 255, .12);
+  border-left: 4px solid var(--teal);
+  padding: 10px 12px;
+  font-size: 13px;
+  color: #e8eaf4;
+}
+.progress-wrap { max-width: 760px; }
+.progress-bar { background: rgba(255, 255, 255, .25); border-radius: 8px; height: 12px; overflow: hidden; }
+.progress-bar div { background: linear-gradient(90deg, var(--teal), var(--pink)); height: 100%; }
+#progress { font-weight: 700; margin: 8px 0 2px; }
+.grade-counts { margin: 0; font-size: 13px; color: #cfd4ea; }
+.controls {
+  display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
+  padding: 14px 24px; background: #fff; border-bottom: 1px solid var(--line);
+  position: sticky; top: 0; z-index: 5;
+}
+.controls input[type="search"] { flex: 1 1 220px; padding: 8px 10px; border: 1px solid var(--line); border-radius: 6px; font-size: 14px; }
+.controls select { padding: 8px; border: 1px solid var(--line); border-radius: 6px; font-size: 14px; background: #fff; }
+.controls button, .import-btn {
+  padding: 8px 12px; border: 1px solid var(--navy); border-radius: 6px;
+  background: var(--navy); color: #fff; font-size: 14px; cursor: pointer;
+}
+.import-btn input { display: none; }
+.controls button:hover, .import-btn:hover { background: #2b3560; }
+.toggle { font-size: 14px; display: flex; gap: 6px; align-items: center; }
+.callout {
+  margin: 16px 24px 0; padding: 12px 14px; border: 2px solid #b3541e;
+  background: #fff4e5; border-radius: 8px; font-size: 14px;
+}
+#roadmap, main, footer { padding: 8px 24px 24px; }
+#roadmap h2, main h2, footer h2 { font-size: 22px; margin: 18px 0 6px; }
+.muted { color: var(--muted); font-size: 14px; }
+#roadmap, #listHeading, .trophy { scroll-margin-top: 70px; }
+.roadmap { list-style: none; padding: 0; counter-reset: stage; }
+.roadmap li {
+  background: var(--card); border: 1px solid var(--line); border-radius: 8px;
+  padding: 12px 14px; margin: 10px 0;
+}
+.roadmap h3 { margin: 0 0 4px; font-size: 16px; color: var(--navy); }
+.roadmap p { margin: 4px 0; font-size: 14px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip {
+  font-size: 12px; padding: 3px 8px; border-radius: 20px;
+  background: #eef1f8; border: 1px solid var(--line);
+}
+.chip.done { background: #dcf5ef; border-color: var(--teal); }
+.trophies { list-style: none; padding: 0; }
+.trophy {
+  display: flex; gap: 12px; background: var(--card);
+  border: 1px solid var(--line); border-radius: 8px;
+  padding: 12px 14px; margin: 10px 0;
+}
+.trophy.earned { border-color: var(--teal); background: #f2fbf9; }
+.trophy input[type="checkbox"] { width: 20px; height: 20px; margin-top: 4px; accent-color: var(--teal); flex: none; }
+.trophy-body { flex: 1; min-width: 0; }
+.trophy-head { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.trophy-name { font-weight: 700; font-size: 16px; }
+.badge { font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 20px; text-transform: uppercase; letter-spacing: .04em; }
+.badge-platinum { background: #e8f4ff; color: #0b5cad; border: 1px solid #0b5cad; }
+.badge-gold { background: #fdf3d0; color: #8a6d00; border: 1px solid var(--gold); }
+.badge-silver { background: #eef1f6; color: #4a5568; border: 1px solid #94a3b8; }
+.badge-bronze { background: #fbeadd; color: #8a4b1f; border: 1px solid #c97b4a; }
+.badge-missable { background: #fde8e8; color: #b91c1c; border: 1px solid #b91c1c; }
+.badge-hidden { background: #f1e8fd; color: #6b21a8; border: 1px solid #6b21a8; }
+.official { margin: 6px 0 2px; font-style: italic; color: #33415e; }
+.meta { margin: 2px 0 6px; font-size: 13px; color: var(--muted); }
+.trophy details { border-top: 1px dashed var(--line); padding-top: 6px; }
+.trophy summary { cursor: pointer; font-weight: 600; color: var(--navy); }
+.trophy summary:hover { color: var(--pink); }
+.guide { font-size: 14px; margin: 8px 0 4px; }
+.source { font-size: 13px; margin: 4px 0 0; }
+.source a { color: #0b5cad; }
+footer { border-top: 1px solid var(--line); background: #fff; }
+footer li { font-size: 14px; margin: 4px 0; }
+@media (max-width: 700px) {
+  .hero h1 { font-size: 24px; }
+  .hero, .controls, #roadmap, main, footer { padding-left: 14px; padding-right: 14px; }
+  .callout { margin-left: 14px; margin-right: 14px; }
+}

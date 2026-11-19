@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GTA VI Trophy Guide — Leonida Legend Tracker</title>
+<meta name="description" content="Offline guide and tracker for all 55 Grand Theft Auto VI trophies on PS5: official names, descriptions and grades, a cited guide for each, a platinum roadmap, missable flags, filters and a spoiler setting.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <p class="kicker">GRAND THEFT AUTO VI &middot; PLAYSTATION 5 &middot; OFFLINE GUIDE</p>
+  <h1>Leonida Legend — GTA VI Trophy Guide &amp; Tracker</h1>
+  <p class="sub">All <strong>55 trophies</strong> — 1 platinum, 2 gold, 6 silver, 46 bronze — each with its official name, description and grade, a guide in our own words, and the source it comes from.</p>
+  <p class="honest" id="honest">Honest note: the game launches 19 November 2026. Every guide below is built from the official trophy description plus a cited source (Exophase, KeenGamer, OutputLag, PowerPyx / GTABase). Where no verified method exists yet, the guide says so — no invented locations or steps. Counts in the list (42 shooting-range challenges, 18 meditation spots, 52 areas, 100 WAiNK spots) come from those same sources.</p>
+  <div class="progress-wrap" aria-label="Progress">
+    <div class="progress-bar"><div id="bar" style="width:0%"></div></div>
+    <p id="progress">0 of 55 earned &middot; 0%</p>
+    <p id="gradeCounts" class="grade-counts"></p>
+  </div>
+</header>
+
+<nav class="controls" aria-label="Tracker controls">
+  <input id="search" type="search" placeholder="Search trophies, missions, places…" aria-label="Search trophies">
+  <select id="kind" aria-label="Filter by kind">
+    <option value="all">All kinds</option>
+    <option value="story">Story</option>
+    <option value="missable">Missable</option>
+    <option value="collectibles">Collectibles</option>
+    <option value="activities">Activities</option>
+    <option value="online">Online</option>
+    <option value="completion">100% completion</option>
+  </select>
+  <select id="grade" aria-label="Filter by grade">
+    <option value="all">All grades</option>
+    <option value="platinum">Platinum</option>
+    <option value="gold">Gold</option>
+    <option value="silver">Silver</option>
+    <option value="bronze">Bronze</option>
+  </select>
+  <select id="earnedFilter" aria-label="Filter by earned state">
+    <option value="all">Earned + unearned</option>
+    <option value="earned">Earned only</option>
+    <option value="unearned">Unearned only</option>
+  </select>
+  <label class="toggle"><input id="spoilers" type="checkbox"> Hide story spoilers</label>
+  <button id="export" type="button">Export progress</button>
+  <label class="import-btn">Import progress <input id="import" type="file" accept="application/json,.json"></label>
+  <button id="reset" type="button">Reset</button>
+</nav>
+
+<section id="missableCallout" class="callout" aria-label="Missable warning">
+  <strong>&#9888; ONE MISSABLE TROPHY.</strong>
+  <span><strong>Positive Mental Attitude</strong> — meditate at every spot across Leonida. The first spot (Lucia&rsquo;s balcony, Chapter 1) disappears after Chapter 1 and there is reportedly no mission replay. Meditate at every spot the moment you find it, and keep a manual save at the start of every chapter. Source: PowerPyx / GTABase, reported by OutputLag.</span>
+</section>
+
+<section id="roadmap" aria-label="Roadmap to the platinum">
+  <h2>Roadmap to the platinum</h2>
+  <p id="roadmapEstimate" class="muted"></p>
+  <ol id="roadmapStages" class="roadmap"></ol>
+  <p id="roadmapWarning" class="muted"></p>
+</section>
+
+<main>
+  <h2 id="listHeading">Trophy checklist</h2>
+  <p id="resultCount" class="muted"></p>
+  <p id="onlineNote" class="muted" hidden>There are no online trophies: all 55 are offline single-player (Exophase). Nothing to earn online — this filter is here so you can check.</p>
+  <ul id="rows" class="trophies"></ul>
+  <p id="emptyNote" class="muted" hidden>No trophies match these filters.</p>
+</main>
+
+<footer>
+  <h2>Sources</h2>
+  <ul>
+    <li><a href="https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/">Exophase — Grand Theft Auto VI Trophies (PS5)</a>: the 55 names, descriptions, grades and the hidden split (28 hidden).</li>
+    <li><a href="https://www.keengamer.com/articles/guides/gta-6-trophy-guide-platinum-roadmap-all-55-trophies/">KeenGamer — GTA 6 Trophy Guide &amp; Platinum Roadmap</a>: ~200-hour estimate, 4/10 difficulty, single-playthrough, no online trophies.</li>
+    <li><a href="https://outputlag.com/guides/gta-6-trophy-list/">OutputLag — GTA 6 Trophy List</a>: the one possibly-missable trophy and the chapter-start save advice.</li>
+    <li>PowerPyx trophy guide and GTABase (named in the guides above): the missable flag for Positive Mental Attitude.</li>
+    <li>Rockstar Games — GTA VI Trailer 2: the Leonida setting (Vice City, the Keys, the Everglades).</li>
+  </ul>
+  <p class="muted">Original fan guide. Not affiliated with Rockstar Games or PlayStation. No Rockstar logo, artwork or game screenshots are used. Progress is stored only in your browser (localStorage) and in files you export yourself.</p>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
