@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida After Dark — GTA VI Trophy Guide &amp; Tracker</title>
+<meta name="description" content="A dark-mode, fully offline guide and tracker for the 55 Grand Theft Auto VI trophies on PS5: official names, descriptions and grades, a cited step-by-step guide per trophy, a six-stage road to the platinum, the single possibly-missable trophy flagged, and a source audit.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <h1>Leonida After Dark</h1>
+    <p class="sub">GTA VI &middot; PlayStation 5 &middot; 55 trophies &middot; step-by-step guides, each step cited</p>
+  </div>
+  <div class="progress-box" aria-label="Progress">
+    <p class="progress-big"><strong id="progressText">0 / 55 earned</strong></p>
+    <div class="progress-bar"><div id="progressBar" style="width:0%"></div></div>
+    <p id="gradeCounts" class="grade-counts"></p>
+  </div>
+  <div class="actions">
+    <button id="exportBtn" type="button">Export</button>
+    <label class="import-btn">Import <input id="importInput" type="file" accept="application/json,.json"></label>
+    <button id="resetBtn" type="button">Reset</button>
+    <label class="toggle"><input id="spoilerToggle" type="checkbox"> Hide story spoilers until earned</label>
+  </div>
+</header>
+
+<p id="auditStrip" class="audit" aria-label="Audit"></p>
+
+<nav id="chips" class="chips" aria-label="Filter by category"></nav>
+
+<nav class="tabs" aria-label="Guide sections">
+  <button type="button" data-tab="checklist" class="tab active">Checklist</button>
+  <button type="button" data-tab="roadmap" class="tab">Roadmap</button>
+  <button type="button" data-tab="missables" class="tab">Missables</button>
+  <button type="button" data-tab="sources" class="tab">Sources</button>
+</nav>
+
+<main>
+  <section id="panel-checklist" class="panel">
+    <div class="guide-grid">
+      <aside class="list-col" aria-label="Trophy checklist">
+        <input id="searchInput" type="search" placeholder="Search trophies, missions, places…" aria-label="Search trophies">
+        <p id="resultCount" class="muted"></p>
+        <ul id="rows" class="rows"></ul>
+        <p id="emptyNote" class="muted" hidden>Nothing matches these filters.</p>
+        <p id="onlineNote" class="muted" hidden>Zero online trophies exist here: all 55 are offline single-player, so this filter will always come back empty. It is here so you can check that for yourself.</p>
+      </aside>
+      <section id="detail" class="detail-col" aria-label="Trophy guide" aria-live="polite"></section>
+      <aside class="sources-col" aria-label="Sources">
+        <h2>Sources <span class="muted">read 20 Nov 2026</span></h2>
+        <ol id="sourcesList" class="sources-list"></ol>
+        <p class="muted small">Each step cites a source by number. Names, descriptions and grades come from the official list.</p>
+      </aside>
+    </div>
+  </section>
+
+  <section id="panel-roadmap" class="panel" hidden>
+    <h2>Road to the platinum — Vice Got a Price!</h2>
+    <p id="roadmapEstimate" class="muted"></p>
+    <div id="roadmapGrid" class="stage-grid"></div>
+    <p id="roadmapWarning" class="muted"></p>
+  </section>
+
+  <section id="panel-missables" class="panel" hidden>
+    <h2>Missables &amp; the watch list</h2>
+    <div id="missableHero" class="missable-hero"></div>
+    <h3>On watch — no verified method yet</h3>
+    <p class="muted">For these trophies, the official description is all that is confirmed. Treat any how-to that names exact spots or triggers for them as a guess until players confirm it.</p>
+    <ul id="watchList" class="watch-list"></ul>
+    <h3>Two sources, two counts</h3>
+    <div id="disagreeBox" class="disagree-box"></div>
+  </section>
+
+  <section id="panel-sources" class="panel" hidden>
+    <h2>Sources &amp; straight talk</h2>
+    <table id="sourcesTable" class="sources-table"></table>
+    <h3>Known, and not yet known</h3>
+    <ul class="notes">
+      <li>The game came out on 19 November 2026 for PlayStation 5 and Xbox Series X|S. This guide is about the PS5 trophy list.</li>
+      <li>Every one of the 55 trophies is single-player and offline. No online trophies, no difficulty trophies.</li>
+      <li>A single trophy is flagged as possibly missable (Positive Mental Attitude). Nothing else in the list is reported missable.</li>
+      <li>9 trophies carry the label UNCONFIRMED: their guides say outright that no verified method exists yet, and the description is all there is.</li>
+      <li>One count is disputed: 18 meditation spots according to GTABase, GamesRadar+ and Push Square, against 15 on the in-game 100% checklist. The guide shows both numbers.</li>
+      <li>The counts inside the guides (42 shooting-range challenges, 52 areas, 100 WAiNK spots, 100 vehicles, 9 gangs, 8 garages, 9 activity types) come from the cited guides rather than from the official descriptions.</li>
+    </ul>
+    <p class="muted">An original fan guide, not affiliated with Rockstar Games or PlayStation. No Rockstar logo, artwork or game screenshots are used. Your progress lives only in your browser (localStorage) and in the files you export yourself.</p>
+  </section>
+</main>
+
+<footer>
+  <p class="muted">Leonida After Dark — a GTA VI trophy guide &amp; tracker, built for the make.fun bounty “Build the best GTA 6 trophy guide”. Your progress never leaves your browser.</p>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>

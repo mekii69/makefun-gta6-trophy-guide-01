@@ -1,0 +1,104 @@
+{
+ "title": "Roadmap to the platinum — Vice Got a Price!",
+ "estimate": "KeenGamer and PowerPyx put the platinum at roughly 200 hours and about 4/10 difficulty. There are no online trophies, no difficulty trophies and no mission medals — the run is long rather than hard.",
+ "stages": [
+  {
+   "stage": 1,
+   "title": "Play the story, save the meditation",
+   "text": "Run the story missions in order. That earns the 12 story trophies — Gone Fishing, Chapters 1–4, the final mission and the six named missions — and lays the groundwork for 100%. Make a manual save when each chapter starts. In Chapter 1, meditate at Lucia's balcony spot before the chapter ends; it is the one that can be missed.",
+   "trophy_ids": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    28
+   ]
+  },
+  {
+   "stage": 2,
+   "title": "Side questlines part of the story",
+   "text": "Work through the five named side strands — Andy, Kenton, Billy, Randy and Tyrone — then three more stranger strands to reach 8 in total for the silver. Grab every stranger icon as it shows up on the map; the strands stay open after the story, so nothing here can be missed.",
+   "trophy_ids": [
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    29
+   ]
+  },
+  {
+   "stage": 3,
+   "title": "Cover the map — collectibles",
+   "text": "Sweep Leonida district by district: all 52 areas, 100 WAiNK It locations, 100 vehicles discovered, 3 card sets, 18 meditation spots and all 8 garages. These trophies share the same road trips, so run them together instead of as separate sweeps.",
+   "trophy_ids": [
+    30,
+    31,
+    35,
+    42,
+    54,
+    55
+   ]
+  },
+  {
+   "stage": 4,
+   "title": "Activities and grinds",
+   "text": "Clear the activity list: 250 stunts, gold in all 42 Shooting Range challenges, wins in 20 different races and at all 14 drone-race locations, 50 challenges, the fishing win over Cal, one arcade game, bowling, and the partner, robbery and combat feats. Try each activity type once early on for Master of None.",
+   "trophy_ids": [
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    32,
+    33,
+    34,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51
+   ]
+  },
+  {
+   "stage": 5,
+   "title": "Money and garages",
+   "text": "Launder $250,000 in Marked Bills through your contacts and spend $100,000 across all shops. Both totals are cumulative, so they should be nearly done by now — finish them off with late-game purchases and heist bills.",
+   "trophy_ids": [
+    52,
+    53
+   ]
+  },
+  {
+   "stage": 6,
+   "title": "100% and the platinum",
+   "text": "Open the in-game 100% checklist: whatever is left is your cleanup list, and A Long Road (gold) pops at 100%. The platinum follows at once.",
+   "trophy_ids": [
+    14,
+    1
+   ]
+  }
+ ],
+ "warning": "Just one trophy is flagged as possibly missable: Positive Mental Attitude. Meditate at every spot the moment you find it, and keep a manual save at the start of every chapter — there is reportedly no mission replay."
+}
